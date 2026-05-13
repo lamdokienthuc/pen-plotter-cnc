@@ -1,13 +1,4 @@
-/* ================================================================
-   ESP32 Pen Plotter Host v2.1
-   FIX: Race condition upload — file giờ chạy được
-   
-   Thay đổi chính so với v2.0:
-   - Dùng File handle global, mở 1 lần ở chunk đầu, đóng ở chunk cuối
-   - Trigger job CHỈ khi (index + len >= total) — body đã ghi xong
-   - Bỏ gFileReady (không cần nữa)
-   - sendLineToPico có flush input buffer trước khi gửi
-   ================================================================ */
+
 
 #include <WiFi.h>
 #include <ESPAsyncWebServer.h>
