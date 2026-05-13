@@ -1,11 +1,4 @@
-/* ================================================================
-   Pico CNC — G-code Controller (Arduino / RP2040)
-   Fix: Arc gằn/giật do accel/decel giữa các segment nội suy
-   Giải pháp: chế độ CONTINUOUS cho arc — không accel/decel,
-              chạy thẳng tốc độ cruise, chỉ accel ở đầu/cuối arc
-   Fix 2: Hỗ trợ Full Circle (Vẽ đường tròn 360 độ khi điểm đầu trùng điểm cuối)
-   Fix 3: Đảo chiều trục X
-   ================================================================ */
+
 
 #include <Arduino.h>
 #include <math.h>
